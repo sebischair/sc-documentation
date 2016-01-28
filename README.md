@@ -1,1 +1,1 @@
-# sc-documentation
+http://documentation.sociocortex.com
