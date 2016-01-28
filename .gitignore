@@ -1,0 +1,9 @@
+bower_components
+node_modules
+typings
+.vs/
+*.sln
+*.suo
+.idea/
+*.iml
+web.config

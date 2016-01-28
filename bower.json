@@ -1,0 +1,34 @@
+{
+  "name": "sc-documentation",
+  "version": "0.0.1",
+  "homepage": "github.com/sebischair/sc-documentation",
+  "authors": [
+    "Thomas Reschenhofer <thomas.reschenhofer@tum.de>"
+  ],
+  "description": "A website representing the documentation and tutorial for SocioCortex",
+  "keywords": [
+    "angular",
+    "sebis",
+    "sociocortex"
+  ],
+  "license": "Sebis Proprietary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "typings",
+    "demo",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": "^1.4.7",
+    "sc-angular": "*",
+    "underscore": "*",
+    "angular-route": "*"
+  },
+  "resolutions": {
+    "angular": ">=1.0.8"
+  }
+}
