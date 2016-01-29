@@ -1,10 +1,9 @@
 ﻿(function () {
     angular.module('scDocumentation')
-    .directive('scDocSidebar', function (scData) {
+    .directive('scDocSearch', function (scData) {
         return {
             require: [],
-            templateUrl:'components/sidebar/sidebar.html'
+            templateUrl: 'components/search/search.html'
         }
     });
-
 })();

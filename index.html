@@ -44,54 +44,14 @@
     </script>
 
 </head>
-<body id="page-top" class="wy-body-for-nav" role="document">
-    <div class="wy-grid-for-nav">
+<body id="page-top" class="wy-body-for-nav" role="document">    
 
-        <sc-doc-sidebar></sc-doc-sidebar>
-
-
-
-
-        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-            <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-                <a href="index.html">SocioCortex</a>
-            </nav>
-
-            <div class="wy-nav-content">
-                <div class="rst-content">
-                    <div role="navigation" aria-label="breadcrumbs navigation">
-                        <ul class="wy-breadcrumbs">
-                            <li><a href="/" }}>Documentation</a> &raquo;</li>
-                            <li>Lesson one</li>
-                        </ul>
-                        <hr />
-                    </div>
-
-                    <div role="main" class="document">
-                        <div class="section" id="welcome-to-read-the-docs">
-                            <div class="page-content">
-                                <div class="wrapper">
-                                    <h1>SocioCortex Tutorial</h1>
-                                    <p>The tutorial makes you familiar with the SocioCortex concepts and its REST API.</p>
-
-                                    <h2>Basics of the SocioCortex API</h2>
-
-                                    <div ng-view></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </div>
+    <div ng-view></div>
 
 
     <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
         <span class="rst-current-version" data-toggle="rst-current-version">
-            <span class="fa fa-copyright"> 2015. <a target="_blank" href="http://wwwmatthes.in.tum.de">sebis</a>. All rights reserved.</span>
+            <span class="fa fa-copyright"> 2016. <a target="_blank" href="http://wwwmatthes.in.tum.de">sebis</a>. All rights reserved.</span>
 
         </span>
     </div>
@@ -121,7 +81,14 @@
     <script type="text/javascript" src="js/readthedocs-doc-embed-modified.js"></script>
 
     <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="components/sidebar/sidebar.controller.js"></script>
+
+    <script type="text/javascript" src="components/sidebar/sidebar.directive.js"></script>
+    <script type="text/javascript" src="components/navbar/navbar.directive.js"></script>
+    <script type="text/javascript" src="components/search/search.directive.js"></script>
+    
+    <script type="text/javascript" src="templates/home/home.controller.js"></script>
+    <script type="text/javascript" src="templates/lesson/lesson.controller.js"></script>
+    <script type="text/javascript" src="templates/error/error.controller.js"></script>
 
     <script type="text/javascript">
         jQuery(function () {
