@@ -21,6 +21,6 @@ Make sure that the path does not contain any special characters (e.g. umlauts), 
 `bower install` (front-end dependencies)
 
 #### 6) Build
-- `grunt built`: Wires the dependencies defined within bower.json to the application (insert scripts into index.html)
+- `grunt build`: Wires the dependencies defined within bower.json to the application (insert scripts into index.html)
 - `grunt serve`: Builds the project, starts a web server, and opens the client in your default browser. Updates automatically when you edit the code
 ````
