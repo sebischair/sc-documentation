@@ -4,6 +4,7 @@
     // Declare app level module which depends on views, and components
     angular.module('scDocumentation', [
       'ngRoute',
+      'ngSanitize',
       'sociocortex'
     ]).config(['$routeProvider', function ($routeProvider) {
 

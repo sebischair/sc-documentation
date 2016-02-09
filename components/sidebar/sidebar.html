@@ -4,18 +4,13 @@
         <sc-doc-search></sc-doc-search>
     </div>
     <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <div ng-repeat="category in elements">
+        <div class="local-toc" ng-repeat="category in elements">
             <p class="caption"><span class="caption-text">{{ category.name }}</span></p>
             <ul>
                 <li ng-repeat="item in category.children" class="toctree-l1"><a class="reference internal" ng-class="{ 'nav-active': item.id == currentId }" href="#/{{ item.id }}/{{ item.name}}">{{ item.name }}</a></li>
             </ul>
         </div>
-    </div>    
-    <style>
-        .wy-menu-vertical .nav-active {
-            border-left: 10px solid #2980B9 !important;
-            color: #eee;
-        }
-    </style>   
+    </div>
+
     &nbsp;
 </nav>

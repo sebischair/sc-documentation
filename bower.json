@@ -26,6 +26,7 @@
     "angular": "^1.4.7",
     "sc-angular": "*",
     "underscore": "*",
+    "angular-sanitize": "*",
     "angular-route": "*"
   },
   "resolutions": {
