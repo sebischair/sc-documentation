@@ -13,6 +13,11 @@
             controller: 'ErrorController'
         });
 
+        $routeProvider.when('/search', {
+            templateUrl: 'templates/search/search.html',
+            controller: 'SearchController as ctrl'
+        });
+
         $routeProvider.when('/:lessonId/:lessonName?', {
             templateUrl: 'templates/lesson/lesson.html',
             controller: 'LessonController'

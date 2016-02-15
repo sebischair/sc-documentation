@@ -2,3 +2,7 @@
     border-left: 10px solid #2980B9 !important;
     color: #eee;
 }
+
+.search li {
+    list-style: none;
+}

@@ -44,10 +44,9 @@
     </script>
 
 </head>
-<body id="page-top" class="wy-body-for-nav" role="document">
+<body id="page-top" class="wy-body-for-nav" role="document" ng-controller="IndexController as indexCtrl">
 
     <div ng-view></div>
-
     <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
         <span class="rst-current-version" data-toggle="rst-current-version">
             <span class="fa fa-copyright"> 2016. <a target="_blank" href="http://wwwmatthes.in.tum.de">sebis</a>. All rights reserved.</span>
@@ -85,9 +84,13 @@
     <script type="text/javascript" src="components/navbar/navbar.directive.js"></script>
     <script type="text/javascript" src="components/search/search.directive.js"></script>
 
+    <script type="text/javascript" src="index.controller.js"></script>
     <script type="text/javascript" src="templates/home/home.controller.js"></script>
     <script type="text/javascript" src="templates/lesson/lesson.controller.js"></script>
     <script type="text/javascript" src="templates/error/error.controller.js"></script>
+    <script type="text/javascript" src="templates/search/search.controller.js"></script>
+
+    <script type="text/javascript" src="templates/search/search.service.js"></script>
 
     <script type="text/javascript">
         jQuery(function () {

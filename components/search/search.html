@@ -1,6 +1,6 @@
 ﻿<div role="search">
-    <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-        <input type="text" name="q" placeholder="Search docs" />
+    <form id="rtd-search-form" class="wy-form" ng-submit="indexCtrl.showSearchResults()" method="get">
+        <input type="text" name="q" ng-model="indexCtrl.searchText" placeholder="Search docs" />
         <input type="hidden" name="check_keywords" value="yes" />
         <input type="hidden" name="area" value="default" />
     </form>
