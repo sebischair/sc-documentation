@@ -1,16 +1,19 @@
 ﻿<nav data-toggle="wy-nav-shift" class="wy-nav-side">
-    <div class="wy-side-nav-search">
-        <a href="/" class="icon icon-home"> SocioCortex Docs</a>
-        <sc-doc-search></sc-doc-search>
-    </div>
-    <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <div class="local-toc" ng-repeat="category in elements">
-            <p class="caption"><span class="caption-text">{{ category.name }}</span></p>
-            <ul>
-                <li ng-repeat="item in category.children" class="toctree-l1"><a class="reference internal" ng-class="{ 'nav-active': item.id == currentId }" href="#/{{ item.id }}/{{ item.name}}">{{ item.name }}</a></li>
-            </ul>
+    <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+            <a href="/" class="icon icon-home"> SocioCortex Docs</a>
+            <sc-doc-search></sc-doc-search>
+        </div>
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+            <div class="local-toc" ng-repeat="category in elements">
+                <p class="caption"><span class="caption-text">{{ category.name }}</span></p>
+                <ul>
+                    <li ng-repeat="item in category.children" class="toctree-l1"><a class="reference internal"
+                                                                                    ng-class="{ 'nav-active': item.id == currentId }"
+                                                                                    href="#/{{ item.id }}/{{ item.name}}">{{
+                        item.name }}</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-
-    &nbsp;
 </nav>
