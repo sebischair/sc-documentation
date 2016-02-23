@@ -6,7 +6,6 @@
             templateUrl: 'components/sidebar/sidebar.html',
             controller: function ($scope, $element, $routeParams) {
                 $scope.currentId = $routeParams.lessonId;
-                scAuth.login('daniel.elsner@tum.de', 'qf30sqqihny3');
                 scData.Workspace.get({ id: scDocConfig.workspace.id, meta : 'entityTree' }, function (workspace) {
                     $scope.elements = workspace.entityTree.children;
                 });

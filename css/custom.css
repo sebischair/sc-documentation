@@ -3,6 +3,21 @@
     color: #eee;
 }
 
-.search li {
-    list-style: none;
+.md-virtual-repeat-container.md-autocomplete-suggestions-container {
+    z-index:999;
+}
+
+.md-autocomplete-suggestions li {
+    height:32px;
+    line-height: 32px;
+}
+
+.md-autocomplete {
+    -webkit-transition: border 0.3s linear;
+    -moz-transition: border 0.3s linear;
+    transition: border 0.3s linear;
+}
+
+.wy-plain-list-disc li, .rst-content .section ul li, .rst-content .toctree-wrapper ul li, article ul li {
+    list-style:none;
 }

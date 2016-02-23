@@ -1,4 +1,4 @@
-﻿<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
     <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
         <a href="index.html">SocioCortex Docs</a>
@@ -11,9 +11,14 @@
             <div role="main" class="document" itemscope="itemscope" itemstyle="http://schema.org/Article">
                 <div class="section" id="welcome-to-read-the-docs">
                     <div itemprop="articleBody">
-                        <div class="section">
-                            <h1>{{ title }}</h1>
-                            <div ng-bind-html="content"></div>
+                        <div id="search-results">
+                            <h2>Search Results</h2>
+                            <p>Search finished, found {{ctrl.searchResults.length}} page(s) matching the search
+                                query.</p>
+                            <ul class="search">
+                                <li ng-repeat="res in ctrl.searchResults">
+                                    <a href="">{{res.name}}</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
