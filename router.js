@@ -12,7 +12,7 @@
         });
 
         $routeProvider.when('/search', {
-            templateUrl: 'components/searchresults/search.html',
+            templateUrl: 'components/searchresults/searchresults.html',
             controller: 'SearchController as ctrl'
         });
 
