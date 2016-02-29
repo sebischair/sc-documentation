@@ -3,6 +3,36 @@
     color: #eee;
 }
 
+.toctree-l2 {
+    background-color:#d6d6d6;
+    color:gray;
+}
+
+.toctree-l2 :hover{
+    background-color:#B4AFAF !important;
+}
+
+.toctree-l2 a{
+    color:#000 !important;
+    line-height:12px !important;
+    padding-left:40px;
+
+}
+
+.toctree-l3 a{
+    color:#4E4A4A !important;
+    padding-left:50px;
+}
+
+.wy-menu-vertical li.toctree-l2.current > a {
+    background: #c9c9c9;
+    padding-left: 40px !important;
+}
+
+.wy-menu-vertical li.toctree-l3.current > a {
+    padding-left:50px;
+}
+
 .md-virtual-repeat-container.md-autocomplete-suggestions-container {
     z-index:999;
 }

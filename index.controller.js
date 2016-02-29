@@ -2,7 +2,7 @@
     angular.module('scDocumentation')
         .controller('IndexController', IndexController);
 
-    function IndexController(scUtil, $resource, $route, $location, $log) {
+    function IndexController(scUtil, $resource, $routeParams, $location, $log) {
         var vm = this;
         //vm.test = "test";
         //vm.searchText = "";
@@ -10,7 +10,8 @@
         vm.searchTextChange = searchTextChange;
         vm.selectedItemChange = selectedItemChange;
         vm.showSearchResults = showSearchResults;
-        vm.test = [{name:"hi",id:1}, {name:"ho", id:2}];
+        vm.setActiveParent = setActiveParent;
+        vm.activeParent = null;
 
         function showSearchResults(keyEvent, searchText) {
             if (keyEvent != undefined && keyEvent.which === 13) {
@@ -42,9 +43,14 @@
         function selectedItemChange(item) {
             $log.info('Item changed to ' + JSON.stringify(item));
             if (item && item.href) {
-                var path = scUtil.getRelativeUrl(item.href);
-                $location.path(path.substr(1));
+                var path = item.id + "/" + item.name;
+                $location.path(path);
             }
+        }
+
+        function setActiveParent(itemId){
+            $log.info("active Parent is " + itemId);
+            vm.activeParent = itemId;
         }
 
     }

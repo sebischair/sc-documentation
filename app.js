@@ -11,6 +11,6 @@
         baseUri: 'https://server.sociocortex.com',
         apiVersion: 'v1'
     }).constant('scDocConfig', {
-        workspace: {id: '28otxru3bnn1'}
+        workspace: {id:"28otxru3bnn1"} // to test multidimensional navigation {id: '1q14hp16ch3bu'}
     });
 })();

@@ -1,3 +1,5 @@
+<sc-doc-sidebar></sc-doc-sidebar>
+
 <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
     <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
@@ -17,7 +19,7 @@
                                 query.</p>
                             <ul class="search">
                                 <li ng-repeat="res in ctrl.searchResults">
-                                    <a href="">{{res.name}}</a></li>
+                                    <a href="#/{{res.id}}/{{res.name}}">{{res.name}}</a></li>
                             </ul>
                         </div>
                     </div>

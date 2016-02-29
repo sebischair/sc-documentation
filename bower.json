@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "angular": "^1.4.7",
-    "sc-angular": "*",
+    "sc-angular": "https://github.com/sebischair/sc-angular.git#master",
     "underscore": "*",
     "angular-sanitize": "*",
     "angular-route": "*",
