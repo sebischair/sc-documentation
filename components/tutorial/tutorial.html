@@ -1,0 +1,15 @@
+
+    <div class="editor-console-wrapper" >
+      <div id="editor"  ui-ace="{
+      require: ['ace/ext/language_tools'],
+      advanced: {
+        enableSnippets: true,
+        enableBasicAutocompletion: true,
+        enableLiveAutocompletion: true
+      }
+      }"></div>
+
+      <div id="editor-run" class="button" ng-click="runCode()">Run</div>
+      <div id="console"></div>
+      <div id="console-clear" class="button" ng-click="clearConsole()">Clear</div>
+    </div>

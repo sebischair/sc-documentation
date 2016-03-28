@@ -27,6 +27,9 @@
     "sc-angular": "*",
     "underscore": "*",
     "angular-sanitize": "*",
+    "angular-ui-ace": "*",
+    "ace-builds": "*",
+    "jq-console": "*",
     "angular-route": "*"
   },
   "resolutions": {
