@@ -5,14 +5,12 @@
             require: [],
             templateUrl: 'components/sidebar/sidebar.html',
             controller: function ($scope, $element, $routeParams) {
-<<<<<<< HEAD
+
                 $scope.currentId = $routeParams.lessonId;
                 scAuth.login('username', 'password');
-=======
                 var vm = $scope;
                 vm.currentId = $routeParams.lessonId;
 
->>>>>>> 8edaf1cde5f006cf8c4c9a189e6a5b337d392325
                 scData.Workspace.get({ id: scDocConfig.workspace.id, meta : 'entityTree' }, function (workspace) {
                     vm.elements = workspace.entityTree.children;
 

@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "homepage": "github.com/sebischair/sc-documentation",
   "authors": [
-    "Thomas Reschenhofer <thomas.reschenhofer@tum.de>"
+    "Thomas Reschenhofer <thomas.reschenhofer@tum.de>",
+    "Sirma Gjorgievska <sirma.gjorgievska@tum.de>"
   ],
   "description": "A website representing the documentation and tutorial for SocioCortex",
   "keywords": [
@@ -27,15 +28,11 @@
     "sc-angular": "https://github.com/sebischair/sc-angular.git#master",
     "underscore": "*",
     "angular-sanitize": "*",
-<<<<<<< HEAD
     "angular-ui-ace": "*",
     "ace-builds": "*",
     "jq-console": "*",
-    "angular-route": "*"
-=======
     "angular-route": "*",
     "angular-material": "master"
->>>>>>> 8edaf1cde5f006cf8c4c9a189e6a5b337d392325
   },
   "resolutions": {
     "angular": ">=1.0.8",
