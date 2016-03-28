@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<nav class="wy-nav-side" data-toggle="wy-nav-shift">
   <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
@@ -14,4 +15,35 @@
       </div>
   </div>
     &nbsp;
+=======
+﻿<nav data-toggle="wy-nav-shift" class="wy-nav-side">
+    <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+            <a href="/" class="icon icon-home"> SocioCortex Docs</a>
+            <sc-doc-search></sc-doc-search>
+        </div>
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+            <div class="local-toc" ng-repeat="category in elements">
+                <p class="caption"><span class="caption-text">{{ category.name }}</span></p>
+                <ul>
+                    <li ng-repeat="item in category.children" class="toctree-l1"><a class="reference internal"
+                                                                                    ng-class="{ 'nav-active': (item.id == currentId || item.showChildren)}"
+                                                                                    href="#/{{ item.id }}/{{ item.name}}">{{
+                        item.name }}</a>
+                        <ul ng-if="item.children.length > 0 && (item.showChildren)">
+                            <li ng-repeat="x in item.children track by x.id" class="toctree-l2" ng-class="{'current': x.id == currentId}"><a
+                                href="#/{{x.id}}/{{x.name}}">{{x.name}}</a>
+                                <ul ng-if="x.children.length > 0 && (x.showChildren)">
+                                    <li ng-repeat="y in x.children track by y.id" class="toctree-l3" ng-class="{'current': y.id == currentId}"><a
+                                            href="#/{{y.id}}/{{y.name}}">{{y.name}}</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+>>>>>>> 8edaf1cde5f006cf8c4c9a189e6a5b337d392325
 </nav>
+

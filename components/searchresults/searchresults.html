@@ -1,4 +1,4 @@
-﻿<sc-doc-sidebar></sc-doc-sidebar>
+<sc-doc-sidebar></sc-doc-sidebar>
 
 <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
     <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
@@ -8,11 +8,19 @@
 
     <div class="wy-nav-content">
         <div class="rst-content">
+            <sc-doc-navbar></sc-doc-navbar>
+
             <div role="main" class="document" itemscope="itemscope" itemstyle="http://schema.org/Article">
                 <div class="section" id="welcome-to-read-the-docs">
                     <div itemprop="articleBody">
-                        <div class="section">
-                            <span class="error">{{ message }}</span>
+                        <div id="search-results">
+                            <h2>Search Results</h2>
+                            <p>Search finished, found {{ctrl.searchResults.length}} page(s) matching the search
+                                query.</p>
+                            <ul class="search">
+                                <li ng-repeat="res in ctrl.searchResults">
+                                    <a href="#/{{res.id}}/{{res.name}}">{{res.name}}</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

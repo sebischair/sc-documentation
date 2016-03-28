@@ -24,15 +24,21 @@
   ],
   "dependencies": {
     "angular": "^1.4.7",
-    "sc-angular": "*",
+    "sc-angular": "https://github.com/sebischair/sc-angular.git#master",
     "underscore": "*",
     "angular-sanitize": "*",
+<<<<<<< HEAD
     "angular-ui-ace": "*",
     "ace-builds": "*",
     "jq-console": "*",
     "angular-route": "*"
+=======
+    "angular-route": "*",
+    "angular-material": "master"
+>>>>>>> 8edaf1cde5f006cf8c4c9a189e6a5b337d392325
   },
   "resolutions": {
-    "angular": ">=1.0.8"
+    "angular": ">=1.0.8",
+    "angular-material": "master"
   }
 }

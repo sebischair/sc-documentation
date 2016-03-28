@@ -7,6 +7,7 @@ body {
     color: #eee;
 }
 
+<<<<<<< HEAD
 .ace_editor {
    min-height: 200px;
    width: 600px;
@@ -126,3 +127,53 @@ body .ace_editor:hover .ace_scrollbar {
 .jqconsole-error {
   color: red;
 }
+=======
+.toctree-l2 {
+    background-color:#d6d6d6;
+    color:gray;
+}
+
+.toctree-l2 :hover{
+    background-color:#B4AFAF !important;
+}
+
+.toctree-l2 a{
+    color:#000 !important;
+    line-height:12px !important;
+    padding-left:40px;
+
+}
+
+.toctree-l3 a{
+    color:#4E4A4A !important;
+    padding-left:50px;
+}
+
+.wy-menu-vertical li.toctree-l2.current > a {
+    background: #c9c9c9;
+    padding-left: 40px !important;
+}
+
+.wy-menu-vertical li.toctree-l3.current > a {
+    padding-left:50px;
+}
+
+.md-virtual-repeat-container.md-autocomplete-suggestions-container {
+    z-index:999;
+}
+
+.md-autocomplete-suggestions li {
+    height:32px;
+    line-height: 32px;
+}
+
+.md-autocomplete {
+    -webkit-transition: border 0.3s linear;
+    -moz-transition: border 0.3s linear;
+    transition: border 0.3s linear;
+}
+
+.wy-plain-list-disc li, .rst-content .section ul li, .rst-content .toctree-wrapper ul li, article ul li {
+    list-style:none;
+}
+>>>>>>> 8edaf1cde5f006cf8c4c9a189e6a5b337d392325

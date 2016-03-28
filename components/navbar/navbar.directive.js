@@ -6,8 +6,8 @@
             templateUrl: 'components/navbar/navbar.html',
             controller: function ($scope, $element, $routeParams) {
                 scData.Entity.get({ id: $routeParams.lessonId, meta:'parent', attributes:'' }, function (entity) {
-                    $scope.item = entity.name;
-                    $scope.parent = entity.parent.name;
+                    $scope.item = entity;
+                    $scope.parent = entity.parent;
                 });
             }
         }
