@@ -16,7 +16,7 @@
                         <div class="section">
                             <h1>{{ title }}</h1>
                             <div ng-prism ng-bind-html="content"></div>
-                            <sc-doc-tutorial ng-if="parentTitle === 'Tutorial'" tutorial-id={{entityId}}></sc-doc-tutorial>
+                            <sc-doc-tutorial ng-if="hasInteractiveTutorial" tutorial-id={{entityId}}></sc-doc-tutorial>
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@
             controller: function ($scope, $element, $routeParams) {
 
                 $scope.currentId = $routeParams.lessonId;
-                scAuth.login('username', 'password');
+                scAuth.login('sociocortex.sebis@tum.de', 'sebis');
                 var vm = $scope;
                 vm.currentId = $routeParams.lessonId;
 
