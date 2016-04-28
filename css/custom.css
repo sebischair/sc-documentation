@@ -1,5 +1,5 @@
-body {
-  text-align: justify;
+﻿body {
+    text-align: justify;
 }
 
 .wy-menu-vertical .nav-active {
@@ -8,24 +8,24 @@ body {
 }
 
 .toctree-l2 {
-    background-color:#d6d6d6;
-    color:gray;
+    background-color: #d6d6d6;
+    color: gray;
 }
 
-.toctree-l2 :hover{
-    background-color:#B4AFAF !important;
+.toctree-l2 :hover {
+    background-color: #B4AFAF !important;
 }
 
-.toctree-l2 a{
-    color:#000 !important;
-    line-height:12px !important;
-    padding-left:40px;
+.toctree-l2 a {
+    color: #000 !important;
+    line-height: 12px !important;
+    padding-left: 40px;
 
 }
 
-.toctree-l3 a{
-    color:#4E4A4A !important;
-    padding-left:50px;
+.toctree-l3 a {
+    color: #4E4A4A !important;
+    padding-left: 50px;
 }
 
 .wy-menu-vertical li.toctree-l2.current > a {
@@ -34,15 +34,15 @@ body {
 }
 
 .wy-menu-vertical li.toctree-l3.current > a {
-    padding-left:50px;
+    padding-left: 50px;
 }
 
 .md-virtual-repeat-container.md-autocomplete-suggestions-container {
-    z-index:999;
+    z-index: 999;
 }
 
 .md-autocomplete-suggestions li {
-    height:32px;
+    height: 32px;
     line-height: 32px;
 }
 
@@ -53,125 +53,141 @@ body {
 }
 
 .wy-plain-list-disc li, .rst-content .section ul li, .rst-content .toctree-wrapper ul li, article ul li {
-    list-style:none;
+    list-style: none;
 }
 
 .ace_editor {
-   min-height: 200px;
-   width: 600px;
-   float: left;
-   height: auto;
+    min-height: 200px;
+    width: 600px;
+    float: left;
+    height: auto;
 }
 
 body .ace_scrollbar {
     display: none;
 }
+
 body .ace_editor:hover .ace_scrollbar {
     display: block;
 }
 
 .editor-console-wrapper {
-  overflow: hidden;
-}
-
+    overflow: hidden;
 }
 
 .wy-nav-content {
-  max-width: 1000px; !important
-  min-height: 400px; !important
+    max-width: 1000px;
+!important min-height: 400 px;
+!important
 }
 
-.readonly-highlight{
+.readonly-highlight {
     background-color: red;
     opacity: 0.2;
     position: absolute;
 }
 
 .highlight-input-line {
-  position:absolute;
-  background:rgba(100,200,100,0.5);
-  z-index:20
+    position: absolute;
+    background: rgba(100, 200, 100, 0.5);
+    z-index: 20
 }
 
 #editor-run {
-  background: white;
-  background-position: 0 -65px !important;
-  position: absolute;
-  margin-top: 1%;
-  margin-left: 37%;
-  z-index: 5;
-  padding: 4px 10px 5px;
-  font-size: 0.7em;
-  font-weight: bold;
-  border-radius: 4px;
-  opacity:0.8;
+    background: white;
+    background-position: 0 -65px !important;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 37%;
+    z-index: 5;
+    padding: 4px 10px 5px;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 4px;
+    opacity: 0.8;
 }
 
 #console-clear {
-  background: white;
-  background-position: 0 -65px !important;
-  margin-top: 2%;
-  margin-left: 95%;
-  width: 5%;
-  z-index: 5;
-  padding: 4px 10px 5px;
-  font-size: 0.7em;
-  font-weight: bold;
-  border-radius: 4px;
-  opacity:0.8;
+    background: white;
+    background-position: 0 -65px !important;
+    margin-top: 2%;
+    margin-left: 95%;
+    width: 5%;
+    z-index: 5;
+    padding: 4px 10px 5px;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 4px;
+    opacity: 0.8;
 
 }
 
 .button {
-  cursor: pointer;
-  color: #6e6e6e;
+    cursor: pointer;
+    color: #6e6e6e;
 }
 
 #console {
-  min-height: 200px;
-  height: auto;
-  width: 300px;
-  background-color: #343131;
-  border: 2px solid #CCC;
-  position:absolute;
-  overflow: hidden;
-  margin-left: 42%;
+    min-height: 200px;
+    height: auto;
+    width: 300px;
+    background-color: #343131;
+    border: 2px solid #CCC;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 42%;
 }
+
 /* The inner console element. */
 .jqconsole {
-  padding: 10px;
+    padding: 10px;
 }
+
 /* The cursor. */
 .jqconsole-cursor {
-  background-color: gray;
+    background-color: gray;
 }
+
 /* The cursor color when the console looses focus. */
 .jqconsole-blurred .jqconsole-cursor {
-  background-color: #666;
+    background-color: #666;
 }
+
 /* The current prompt text color */
 .jqconsole-prompt {
-  color: white;
+    color: white;
 }
+
 /* The command history */
 .jqconsole-old-prompt {
-  color: #D14C25;
-  font-weight: normal;
+    color: #D14C25;
+    font-weight: normal;
 }
+
 /* The text color when in input mode. */
 .jqconsole-input {
-  color: #dd0;
+    color: #dd0;
 }
+
 /* Previously entered input. */
 .jqconsole-old-input {
-  color: #bb0;
-  font-weight: normal;
+    color: #bb0;
+    font-weight: normal;
 }
+
 /* The text color of the output. */
 .jqconsole-output {
-  color: white;
+    color: white;
 }
 
 .jqconsole-error {
-  color: red;
+    color: red;
+}
+
+.paginate-active {
+    font-weight: bold;
+}
+
+.pagination {
+    text-align: center;
 }

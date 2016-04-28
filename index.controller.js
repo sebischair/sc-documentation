@@ -2,10 +2,8 @@
     angular.module('scDocumentation')
         .controller('IndexController', IndexController);
 
-    function IndexController(scUtil, $resource, $routeParams, $location, $log) {
+    function IndexController($q, scDocConfig, scSearch, $location, $log) {
         var vm = this;
-        //vm.test = "test";
-        //vm.searchText = "";
         vm.getSearchHints = getSearchHints;
         vm.searchTextChange = searchTextChange;
         vm.selectedItemChange = selectedItemChange;
@@ -16,24 +14,29 @@
         function showSearchResults(keyEvent, searchText) {
             if (keyEvent != undefined && keyEvent.which === 13) {
                 var searchParams = {
-                    q: searchText
+                    text: searchText,
+                    n: 20,
+                    page: 1
                 };
                 $location.path('search').search(searchParams);
             }
         }
 
         function getSearchHints(searchText) {
-            var searchHints = $resource(scUtil.getFullUrl("searchHints"));
 
-            console.log("searching for hints:");
-            console.log(searchText);
+            var deferred = $q.defer();
 
-            return searchHints.get({'q': searchText}).$promise.then(function (data) {
-                console.log("data");
-                console.log(data);
-                console.log(data.hints);
-                return data.hints;
+            scSearch.hints({
+                text: searchText,
+                workspace: scDocConfig.workspace
+            }, function (success) {
+                deferred.resolve(success.hints);
+
+            }, function (error) {
+                $log.info("error searchHints");
             });
+
+            return deferred.promise;
         }
 
         function searchTextChange(text) {
@@ -48,7 +51,7 @@
             }
         }
 
-        function setActiveParent(itemId){
+        function setActiveParent(itemId) {
             $log.info("active Parent is " + itemId);
             vm.activeParent = itemId;
         }

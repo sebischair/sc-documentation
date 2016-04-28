@@ -15,11 +15,25 @@
                     <div itemprop="articleBody">
                         <div id="search-results">
                             <h2>Search Results</h2>
-                            <p>Search finished, found {{ctrl.searchResults.length}} page(s) matching the search
+                            <p>Search finished, found {{(ctrl.page-1)*ctrl.n + 1}} - {{ctrl.page * ctrl.n >
+                                ctrl.searchResultsCount ? ctrl.searchResultsCount : ctrl.page * ctrl.n}} of
+                                {{ctrl.searchResultsCount}}
+                                page(s) matching the search
                                 query.</p>
+                            <p class="pagination">
+                                <a ng-repeat="i in ctrl.paginationArray track by $index"
+                                   ng-class="{'paginate-active': ctrl.page == ($index+1)}"
+                                   ng-click="ctrl.page = $index +1; ctrl.filterResults();">
+                                    {{$index + 1}}
+                                </a>
+                            </p>
                             <ul class="search">
                                 <li ng-repeat="res in ctrl.searchResults">
-                                    <a href="#/{{res.id}}/{{res.name}}">{{res.name}}</a></li>
+                                    <a href="#/{{res.id}}/{{res.name}}">{{res.name}}</a>
+                                    <p>
+                                        Type: {{res.resourceType}}
+                                    </p>
+                                </li>
                             </ul>
                         </div>
                     </div>
